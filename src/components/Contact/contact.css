@@ -1,0 +1,153 @@
+#contactPage {
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactPageTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.clientDesc {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.clientImgs {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clientImg {
+    object-fit: cover;
+    width: 23%;
+    min-width: 9rem;
+    margin: auto;
+    padding: 0.25rem;
+}
+
+#clients {
+    padding: 2rem;
+}
+
+.testimonialsContainer{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.testimonialCard{
+    width: 320px;
+    background: #151d0036;
+
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.testimonialCard:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #00d9ff;
+}
+
+.testimonialImg{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.testimonialText{
+    color: #c7c7c7;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.testimonialCard h3{
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.stars{
+    color: gold;
+    font-size: 1.2rem;
+}
+
+.contactDesc {
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.contactForm {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+
+.name, .email, .msg {
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(40, 40, 40);
+}
+
+.submitBtn {
+    background: white;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 0.75rem 3.5rem;
+    cursor: pointer; 
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.submitBtn:hover {
+    background: #ddd;
+    transform: scale(1.05);
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
+}
+
+.linkedinIcon {
+    border-radius: 50%;
+    background: #fff;
+    padding: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
