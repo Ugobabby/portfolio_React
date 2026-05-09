@@ -25,10 +25,12 @@ body.dark #contactPage {
     margin-bottom: 1rem;
 }
 
-.clientDesc {
-    font-weight: 300;
+.clientDesc{
+    font-weight: 400;
     font-size: 1rem;
 }
+
+
 
 .clientImgs {
     margin: 1rem 0;
@@ -99,8 +101,8 @@ body.dark .testimonialCard {
     margin-bottom: 1rem;
 }
 
-.testimonialCard h3{
-    color: white;
+.testimonialCard h3, .testimonialText{
+    color: inherit;
     margin-bottom: 0.5rem;
 }
 
@@ -162,31 +164,19 @@ body.dark .submitBtn {
 }
 
 .submitBtn {
+    background: white;
     border: none;
     border-radius: 0.5rem;
     margin: 2rem;
     padding: 0.75rem 3.5rem;
-    cursor: pointer;
+    cursor: pointer; 
     font-size: 1rem;
     transition: 0.3s ease;
 }
 
-/* LIGHT MODE */
-body.light .submitBtn {
-    background: black;
-    color: white;
-}
-
-/* DARK MODE */
-body.dark .submitBtn {
-    background: white;
-    color: black;
-}
-
-/* HOVER EFFECT (WORKS IN BOTH MODES) */
 .submitBtn:hover {
+    background: #dddddd;
     transform: scale(1.05);
-    opacity: 0.9;
 }
 
 .links {

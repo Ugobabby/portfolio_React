@@ -50,6 +50,16 @@ body.dark #skills {
     background: rgb(50, 50, 50);
 }
 
+body.light .skillBar {
+    background: #f2f2f2;
+    color: black;
+}
+
+body.dark .skillBar {
+    background: rgb(50, 50, 50);
+    color: white;
+}
+
 .skillBarImg {
     object-fit: cover;
     height: 3rem;
@@ -57,9 +67,12 @@ body.dark #skills {
     margin-right: 2rem;
 }
 
-.skillBarText>p {
+
+.skillBarText> p, 
+.skillBarText > h2 {
     font-size: 0.9rem;
     font-weight: 200;
+    color: inherit;
 }
 
 @media screen and (max-width:720px) {
