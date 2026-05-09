@@ -1,3 +1,14 @@
+body.light #skills {
+    background: white;
+    color: black;
+}
+
+body.dark #skills {
+    background: #121212;
+    color: white;
+}
+
+
 #skills {
     overflow: hidden;
     width: 100vw;
