@@ -1,3 +1,13 @@
+body.light #contactPage {
+    background: white;
+    color: black;
+}
+
+body.dark #contactPage {
+    background: #121212;
+    color: white;
+}
+
 #contactPage {
     min-height: calc(100vh - 4rem);
     width: 100vw;
@@ -34,6 +44,12 @@
     padding: 0.25rem;
 }
 
+.contactPageTitle,
+.clientDesc,
+.contactDesc {
+    color: inherit;
+}
+
 #clients {
     padding: 2rem;
 }
@@ -49,7 +65,6 @@
 .testimonialCard{
     width: 320px;
     background: #151d0036;
-
     border-radius: 20px;
     padding: 2rem;
     text-align: center;
@@ -59,6 +74,15 @@
 .testimonialCard:hover{
     transform: translateY(-8px);
     box-shadow: 0 0 20px #00d9ff;
+}
+body.light .testimonialCard {
+    background: #f5f5f5;
+    color: black;
+}
+
+body.dark .testimonialCard {
+    background: #1e1e1e;
+    color: white;
 }
 
 .testimonialImg{
@@ -70,7 +94,7 @@
 }
 
 .testimonialText{
-    color: #c7c7c7;
+    color: inherit;
     line-height: 1.7;
     margin-bottom: 1rem;
 }
@@ -111,6 +135,30 @@
     border: none;
     border-radius: 0.5rem;
     background: rgb(40, 40, 40);
+}
+
+body.light .name,
+body.light .email,
+body.light .msg {
+    background: #eee;
+    color: black;
+}
+
+body.dark .name,
+body.dark .email,
+body.dark .msg {
+    background: rgb(40, 40, 40);
+    color: white;
+}
+
+body.light .submitBtn {
+    background: black;
+    color: white;
+}
+
+body.dark .submitBtn {
+    background: white;
+    color: black;
 }
 
 .submitBtn {

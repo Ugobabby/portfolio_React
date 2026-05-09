@@ -1,0 +1,18 @@
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+/* Make ALL text inherit theme color */
+body {
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+  font-family: Arial, sans-serif;
+  color: inherit;
+}

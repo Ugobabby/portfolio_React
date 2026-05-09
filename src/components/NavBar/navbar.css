@@ -1,16 +1,18 @@
 .navbar {
     background: rgb(30, 30, 30);
     height: 5rem;
-    width: 100vw;
+    width: 100%;
     max-width: 75rem;
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+    border-radius: 20px;
     top: 0;
     z-index: 3;
+    color: #fff;
+    position: sticky;
 }
 
 .logo {
@@ -52,6 +54,23 @@
         0 0 40px gold;
     transform: scale(1.05);
 
+}
+
+.themeBtn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.themeBtn:hover {
+    color: yellow;
+    transform: rotate(20deg);
 }
 
 .desktopMenuImg {
