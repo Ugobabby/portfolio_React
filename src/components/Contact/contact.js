@@ -16,9 +16,11 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        const name = form.current.from_name.value.trim();
-        const email = form.current.from_email.valu.trim();
-        const message = form.current.message.value.trim();
+        const formData = new FormData(form.current);
+
+        const name = formData.get('from_name')?.trim();
+        const email = formData.get('from_email')?.trim();
+        const message = formData.get('message')?.trim();
 
         // check if fields are empty
         if(!name || !email || !message){
@@ -37,7 +39,7 @@ const Contact = () => {
         })
         .catch((error) => {
             console.log(error);
-            alert('Failed to send message');
+            // alert('Failed to send message');
         });
     };
     
