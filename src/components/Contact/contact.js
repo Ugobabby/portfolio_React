@@ -105,7 +105,7 @@ const Contact = () => {
                     />
 
                     <input 
-                        type="text" 
+                        type="email" 
                         className="email" 
                         placeholder='Your Email' 
                         name='from_email' 
