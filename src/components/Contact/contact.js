@@ -16,6 +16,15 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
+        const name = form.current.from_name.value.trim();
+        const email = form.current.from_email.valu.trim();
+        const message = form.current.message.value.trim();
+
+        // check if fields are empty
+        if(!name || !email || !message){
+            return;
+        }
+
         emailjs.sendForm(
             'service_nlvi2nt',
             'template_wfyj4lc',
@@ -92,6 +101,7 @@ const Contact = () => {
                         className="name" 
                         placeholder='Your name' 
                         name='from_name' 
+                        required
                     />
 
                     <input 
@@ -99,6 +109,7 @@ const Contact = () => {
                         className="email" 
                         placeholder='Your Email' 
                         name='from_email' 
+                        required
                     />
 
                     <textarea 
@@ -106,6 +117,7 @@ const Contact = () => {
                         placeholder='Your Message' 
                         rows={5} 
                         className='msg' 
+                        required
                     ></textarea>
 
                     <button 
