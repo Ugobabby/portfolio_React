@@ -8,3 +8,15 @@
     font-weight: 300;
     font-size: small;
 }
+
+body.light .footer {
+    background: #f2f2f2;
+    font-weight: 400;
+    color: black;
+}
+
+body.dark .footer {
+    background: rgb(50, 50, 50);
+    color: white;
+    font-weight: 400 ;
+}
