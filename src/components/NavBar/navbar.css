@@ -45,15 +45,12 @@
 }
 
 .desktopMenuBtn:hover {
-    background: yellow;
-    color: black;
+    background: linear-gradient(135deg, #d4af37, #ffcc00);
+    color: #121212;
     box-shadow: 
-        0 0 5px yellow,
-        0 0 15px yellow,
-        0 0 30px gold,
-        0 0 40px gold;
+        0 0 10px rgba(212, 175, 55, 0.7),
+        0 0 30px rgba(255, 204, 0, 0.6);
     transform: scale(1.05);
-
 }
 
 .themeBtn {
@@ -70,7 +67,7 @@
 
 .themeBtn:hover {
     color: yellow;
-    transform: rotate(20deg);
+    transform: rotate(180deg);
 }
 
 .desktopMenuImg {

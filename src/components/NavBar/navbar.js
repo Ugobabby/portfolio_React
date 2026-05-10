@@ -84,7 +84,7 @@ const Navbar = () => {
             <button 
                 className="themeBtn" 
                 onClick={toggleTheme}>
-                    {theme === "light" ? <Moon size={22} /> : <Sun size={22} />}
+                    {theme === "dark" ? <Moon size={30} /> : <Sun size={30} />}
             </button>
 
              {/* Mobile Menu Icon */}
